@@ -1,0 +1,26 @@
+# Single-node Apache Cassandra 4.1 for development.
+#   docker compose up -d        start (first start takes 1-2 minutes)
+#   docker compose ps           wait until the status says "healthy"
+#   docker compose down         stop (data is kept in the named volume)
+#   docker compose down -v      stop AND delete all stored data (only if you really want that)
+services:
+  cassandra:
+    image: cassandra:4.1
+    container_name: f1-cassandra
+    ports:
+      - "9042:9042"
+    environment:
+      CASSANDRA_CLUSTER_NAME: f1-cluster
+      MAX_HEAP_SIZE: 1G
+      HEAP_NEWSIZE: 256M
+    volumes:
+      - f1_cassandra_data:/var/lib/cassandra
+    healthcheck:
+      test: ["CMD-SHELL", "cqlsh -e 'describe keyspaces' || exit 1"]
+      interval: 15s
+      timeout: 10s
+      retries: 20
+      start_period: 60s
+
+volumes:
+  f1_cassandra_data:

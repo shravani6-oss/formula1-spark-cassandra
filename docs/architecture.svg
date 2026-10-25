@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 190" font-family="Segoe UI, Arial, sans-serif">
+  <defs><marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#E10600"/></marker></defs>
+  <rect width="1000" height="190" fill="#121214"/>
+  <g fill="#1d1d23" stroke="#E10600" stroke-width="2">
+    <rect x="10" y="50" width="140" height="80" rx="10"/><rect x="180" y="50" width="140" height="80" rx="10"/>
+    <rect x="350" y="50" width="140" height="80" rx="10"/><rect x="520" y="50" width="140" height="80" rx="10"/>
+    <rect x="690" y="50" width="140" height="80" rx="10"/><rect x="860" y="50" width="130" height="80" rx="10"/>
+  </g>
+  <g fill="#F5F5F5" font-size="15" text-anchor="middle" font-weight="600">
+    <text x="80" y="85">Kaggle CSV</text><text x="80" y="105">Dataset</text>
+    <text x="250" y="80">Validation and</text><text x="250" y="100">Ingestion</text><text x="250" y="120" font-size="11" font-weight="400">ingest_to_cassandra.py</text>
+    <text x="420" y="85">Apache</text><text x="420" y="105">Cassandra</text><text x="420" y="120" font-size="11" font-weight="400">keyspace f1_analysis</text>
+    <text x="590" y="85">Apache</text><text x="590" y="105">Spark</text><text x="590" y="120" font-size="11" font-weight="400">connector 3.5.x</text>
+    <text x="760" y="85">Streamlit</text><text x="760" y="105">Dashboard</text>
+    <text x="925" y="85">Plotly</text><text x="925" y="105">Charts</text>
+  </g>
+  <g stroke="#E10600" stroke-width="2.5" marker-end="url(#a)">
+    <line x1="150" y1="90" x2="178" y2="90"/><line x1="320" y1="90" x2="348" y2="90"/>
+    <line x1="490" y1="90" x2="518" y2="90"/><line x1="660" y1="90" x2="688" y2="90"/><line x1="830" y1="90" x2="858" y2="90"/>
+  </g>
+  <text x="500" y="170" fill="#9E9E9E" font-size="12" text-anchor="middle">The six original pages also read the CSV files directly with Spark; the Cassandra Database page reads through Cassandra.</text>
+  <text x="500" y="28" fill="#F5F5F5" font-size="16" text-anchor="middle" font-weight="600">Formula 1 analysis: data flow</text>
+</svg>

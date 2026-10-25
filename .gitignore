@@ -1,0 +1,29 @@
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.streamlit/secrets.toml
+.idea/
+.vscode/
+
+# Python virtual environments
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Secrets
+.env
+.streamlit/secrets.toml
+
+# IDE and test cache
+.idea/
+.vscode/
+.pytest_cache/
+
+# Generated output
+*.log
+spark-warehouse/
+metastore_db/
